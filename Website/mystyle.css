@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(to right, #ffffff, #ffffff); /* Adjust gradient colors */
+  background-image: url('trial-2.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+.year-widget {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(45deg, #2b2828, #494747); /* Use gradients for a 3D effect */
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin-right: 60px;
+  border: 5px solid #cccc;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adding a subtle box shadow for depth */
+  transition: background 0.3s, transform 0.3s; /* Adding transitions for a smoother effect */
+}
+
+.year-widget:hover {
+  background: linear-gradient(45deg, #494747, #2b2828); /* Adjust gradient colors for hover effect */
+  transform: scale(1.1); /* Scale up the widget on hover for a subtle interactive effect */
+}
+
+.semester-widget {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(45deg, #2b2828, #494747); /* Use gradients for a 3D effect */
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin-right: 60px;
+  border: 5px solid #cccc;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adding a subtle box shadow for depth */
+  transition: background 0.3s, transform 0.3s; /* Adding transitions for a smoother effect */
+  display: none;
+}
+
+.semester-widget:hover {
+  background: linear-gradient(45deg, #494747, #2b2828); /* Adjust gradient colors for hover effect */
+  transform: scale(1.1); /* Scale up the widget on hover for a subtle interactive effect */
+}
+
+
+.center-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.nav {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px 20px;
+    display: -moz-grid-line;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 25px;
+  }
+  
+  .nav a:hover {
+    color: #ff6600; /* Change color on hover */
+  }
+  
+ 
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav a {
+      margin: 10px 0;
+    }
+  }
